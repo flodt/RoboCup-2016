@@ -150,8 +150,10 @@ public class Main {
 				if (b == 0) {
 					l.fwd((int) (Constants.Speeds.SLOW * z));
 					r.bwd(Constants.Speeds.SLOW);
-				}
-				
+				} else if (b == 1) {
+					l.bwd(Constants.Speeds.SLOW);
+					r.fwd((int) (Constants.Speeds.SLOW * z));
+				}				
 			}
 		}
 		System.out.println("Cleaning up...");
