@@ -127,10 +127,31 @@ public class Main {
 			// -------
 			// beide Sensoren auf Linie / beide schwarz
 			if (sensor.brghtl() < Constants.SensorValues.SCHWELLE && sensor.brghtr() < Constants.SensorValues.SCHWELLE) {
-				System.out.println("^ / " + sensor.brghtl() + " / " + sensor.brghtr());
+				System.out.println("<^> / " + sensor.brghtl() + " / " + sensor.brghtr());
 				logger.logLineAdjust();
-				l.fwd(Constants.Speeds.FAST);
-				r.fwd(Constants.Speeds.FAST);
+				
+				double x,y,z;
+				int b;
+				if (sensor.brghtl() > sensor.brghtr()) {
+					x = sensor.brghtl();
+					y = sensor.brghtr();
+					b = 0;
+				} else {
+					x = sensor.brghtr();
+					y = sensor.brghtl();
+					b = 1;
+				}
+				if (x == 0 || y == 0) {
+					l.fwd(Constants.Speeds.MED);
+					r.fwd(Constants.Speeds.MED);
+					continue;
+				}
+				z = (x/y)/2.5;
+				if (b == 0) {
+					l.fwd((int) (Constants.Speeds.SLOW * z));
+					r.bwd(Constants.Speeds.SLOW);
+				}
+				
 			}
 		}
 		System.out.println("Cleaning up...");
