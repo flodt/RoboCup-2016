@@ -11,7 +11,7 @@ public class ReadSensorsBrght {
 		SensorData sensor = new SensorData(SensorPort.ONE, SensorPort.TWO, SensorPort.FOUR);
 		
 		while (Button.ESCAPE.isUp()) {
-			System.out.println(sensor.brghtl() + " / " + sensor.brghtr() + " / " + Constants.SensorValues.SCHWELLE);
+			System.out.println(sensor.brghtl() + "/" + sensor.brghtr() + "/" + Constants.SensorValues.SCHWELLE);
 		}
 		System.out.println("Cleaning up...");
 		sensor.close();
