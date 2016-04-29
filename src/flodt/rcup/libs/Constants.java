@@ -14,8 +14,8 @@ public class Constants {
 		public static final int FASTER = 400;
 		public static final int FAST = 360;
 		public static final int MED = 300;
-		public static final int SLOW_TURN_SIDE = 280;
-		public static final int FAST_TURN_SIDE = 380;
+		public static final int SLOW_TURN_SIDE = 250;
+		public static final int FAST_TURN_SIDE = 400;
 		public static final int SLOW = 270;
 		public static final int SLOWER = 180;
 	}
