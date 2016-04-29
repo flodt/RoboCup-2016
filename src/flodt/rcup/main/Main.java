@@ -125,7 +125,7 @@ public class Main {
 			}
 			
 			// -------
-			// beide Sensoren auf Linie / beide sehen schwarz
+			// beide Sensoren auf Linie / beide schwarz
 			if (sensor.brghtl() < Constants.SensorValues.SCHWELLE && sensor.brghtr() < Constants.SensorValues.SCHWELLE) {
 				System.out.println("^ / " + sensor.brghtl() + " / " + sensor.brghtr());
 				logger.logLineAdjust();
