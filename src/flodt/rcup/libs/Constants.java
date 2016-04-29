@@ -14,8 +14,8 @@ public class Constants {
 		public static final int FASTER = 400;
 		public static final int FAST = 360;
 		public static final int MED = 300;
-		public static final int SLOW_TURN_SIDE = 300;
-		public static final int FAST_TURN_SIDE = 360;
+		public static final int SLOW_TURN_SIDE = 280;
+		public static final int FAST_TURN_SIDE = 380;
 		public static final int SLOW = 270;
 		public static final int SLOWER = 180;
 	}
@@ -32,9 +32,7 @@ public class Constants {
 	}
 	
 	public class MotorValues {
-		public static final int TURNING_TIME = 1000; //was 1000
-		//Teeeest
-		//Test zwei
+		public static final int TURNING_TIME = 1000;
 		
 		public static final int EVADE_BACK = -200;
 		public static final int EVADE_TURN_1 = 350;
