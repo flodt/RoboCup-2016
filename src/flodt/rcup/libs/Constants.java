@@ -28,7 +28,7 @@ public class Constants {
 	public class Arena {
 		public static final String LEFT_DIRECTION = "LEFT";
 		public static final String RIGHT_DIRECTION = "RIGHT";
-		public static final String TURNING_DIRECTION = LEFT_DIRECTION;
+		public static final String TURNING_DIRECTION = RIGHT_DIRECTION;
 	}
 	
 	public class MotorValues {
