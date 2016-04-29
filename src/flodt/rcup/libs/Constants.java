@@ -32,7 +32,7 @@ public class Constants {
 	}
 	
 	public class MotorValues {
-		public static final int TURNING_TIME = 1000;
+		public static final int TURNING_TIME = 1250;
 		
 		public static final int EVADE_BACK = -200;
 		public static final int EVADE_TURN_1 = 350;
