@@ -144,7 +144,6 @@ public class Main {
 				} else {
 					System.out.println("> / " + sensor.brghtl() + " / " + sensor.brghtr());					logger.logLineAdjust();
 					l.fwd(Constants.Speeds.FAST);					r.bwd(Constants.Speeds.MED);
-					
 				}
 			}
 			
