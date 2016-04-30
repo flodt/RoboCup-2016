@@ -79,6 +79,10 @@ public class Main {
 				if (sensor.colorl() == Color.GREEN) {
 					System.out.println("<- / " + LeJOSColors.getFriendlyName((int) sensor.colorl()) + "/" + LeJOSColors.getFriendlyName((int) sensor.colorr()));
 					logger.logLeftTurn();
+					
+					l.deg(Constants.Speeds.SLOW, Constants.MotorValues.ADVANCE_DEGS, false);
+					r.deg(Constants.Speeds.SLOW, Constants.MotorValues.ADVANCE_DEGS, false);
+					
 					l.bwd(Constants.Speeds.GREEN_DOT_BWD);
 					r.fwd(Constants.Speeds.GREEN_DOT_FWD);
 					
@@ -109,6 +113,10 @@ public class Main {
 				if (sensor.colorr() == Color.GREEN) {
 					System.out.println("-> / " + LeJOSColors.getFriendlyName((int) sensor.colorl()) + "/" + LeJOSColors.getFriendlyName((int) sensor.colorr()));
 					logger.logRightTurn();
+					
+					l.deg(Constants.Speeds.SLOW, Constants.MotorValues.ADVANCE_DEGS, false);
+					r.deg(Constants.Speeds.SLOW, Constants.MotorValues.ADVANCE_DEGS, false);
+					
 					l.fwd(Constants.Speeds.GREEN_DOT_FWD);
 					r.bwd(Constants.Speeds.GREEN_DOT_BWD);
 					
