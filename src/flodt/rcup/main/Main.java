@@ -99,7 +99,7 @@ public class Main {
 						e.printStackTrace();
 					}
 					
-					while (sensor.brghtr() > Constants.SensorValues.SCHWELLE) {
+					while (sensor.brghtl() > Constants.SensorValues.SCHWELLE) {
 						System.out.println("<- / " + LeJOSColors.getFriendlyName((int) sensor.colorl()) + "/" + LeJOSColors.getFriendlyName((int) sensor.colorr()));
 					}
 				} else {
@@ -139,7 +139,7 @@ public class Main {
 						e.printStackTrace();
 					}
 					
-					while (sensor.brghtl() > Constants.SensorValues.SCHWELLE) {
+					while (sensor.brghtr() > Constants.SensorValues.SCHWELLE) {
 						System.out.println("-> / " + LeJOSColors.getFriendlyName((int) sensor.colorl()) + "/" + LeJOSColors.getFriendlyName((int) sensor.colorr()));
 					}
 				} else {
