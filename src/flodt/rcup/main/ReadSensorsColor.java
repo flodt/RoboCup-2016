@@ -6,6 +6,10 @@ import flodt.rcup.libs.SensorData;
 import flodt.rcup.libs.SensorPort;
 
 public class ReadSensorsColor {
+	/**
+	 * Read and print out sensor values for color.
+	 * @param args
+	 */
 	public static void main (String[]args) {
 		System.out.println("Initializing...");
 		SensorData sensor = new SensorData(SensorPort.ONE, SensorPort.TWO, SensorPort.FOUR);

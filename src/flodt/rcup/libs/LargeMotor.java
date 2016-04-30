@@ -16,7 +16,7 @@ public class LargeMotor {
 	
 	/**
 	 * Drive forward at a set speed.
-	 * @param speed
+	 * @param speed The speed to drive at.
 	 */
 	public void fwd (int speed) {
 		m.setSpeed(speed);
@@ -25,7 +25,7 @@ public class LargeMotor {
 	
 	/**
 	 * Drive backwards at a set speed.
-	 * @param speed
+	 * @param speed The speed to drive at.
 	 */
 	public void bwd (int speed) {
 		m.setSpeed(speed);
@@ -34,8 +34,8 @@ public class LargeMotor {
 	
 	/**
 	 * Turn a set amount of degrees at a set speed.
-	 * @param speed
-	 * @param deg
+	 * @param speed The speed to drive at.
+	 * @param deg The amount of degrees to turn.
 	 * @param immediateReturn Return immediately and continue if true
 	 */
 	public void deg (int speed, int deg, boolean immediateReturn) {
@@ -45,8 +45,8 @@ public class LargeMotor {
 	
 	/**
 	 * Turn to a set degree number at a set speed.
-	 * @param speed
-	 * @param deg
+	 * @param speed The speed to drive at.
+	 * @param deg The degree number to turn to.
 	 * @param immediateReturn Return immediately and continue if true
 	 */
 	public void toDeg (int speed, int deg, boolean immediateReturn) {

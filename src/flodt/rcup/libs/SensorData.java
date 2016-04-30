@@ -78,6 +78,10 @@ public class SensorData {
 		return toucha[0];
 	}*/
 	
+	/**
+	 * Get the brightness value of the left color sensor.
+	 * @return The brightness value of the left color sensor as a float (0-1).
+	 */
 	public float brghtl () {
 		try {
 			float[] brghta = new float[1];
@@ -89,6 +93,10 @@ public class SensorData {
 		}
 	}
 	
+	/**
+	 * Get the brightness value of the right color sensor.
+	 * @return The brightness value of the right color sensor as a float (0-1).
+	 */
 	public float brghtr () {
 		try {
 			float[] brghta2 = new float[1];
@@ -100,6 +108,10 @@ public class SensorData {
 		}
 	}
 	
+	/**
+	 * Get the color id of the left color sensor.
+	 * @return The color id of the left color sensor as an int.
+	 */
 	public float colorl () {
 		try {
 			float[] colora = new float[1];
@@ -111,6 +123,10 @@ public class SensorData {
 		}
 	}
 	
+	/**
+	 * Get the color id of the right color sensor.
+	 * @return The color id of the right color sensor as an int.
+	 */
 	public float colorr () {
 		try {
 			float[] colora2 = new float[1];
@@ -122,6 +138,10 @@ public class SensorData {
 		}
 	}
 	
+	/**
+	 * Get the distance value of the ultrasonic sensor.
+	 * @return The distance value of the ultrasonic sensor as a float in metres.
+	 */
 	public float us () {
 		try {
 			float[] usa = new float[1];
@@ -133,6 +153,9 @@ public class SensorData {
 		}
 	}
 	
+	/**
+	 * Disconnects from all sensors.
+	 */
 	public void close () {
 		//touchs.close();
 		colors.close();

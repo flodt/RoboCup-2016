@@ -15,6 +15,9 @@ public class Logging {
 	long runTime;
 	double runTimeSecs;
 
+	/**
+	 * Manages logging.
+	 */
     public Logging () {
         try {
         	header = new Header();
@@ -25,7 +28,10 @@ public class Logging {
         }
     }
     
-    public void writeHeader () {
+    /**
+     * Write the header of the log to the file. Only called by the constructor.
+     */
+    private void writeHeader () {
     	write("RUN LOG");
     	write("-------");
     	writeNewLine();
@@ -41,6 +47,11 @@ public class Logging {
     	writeNewLine();
     }
 
+    /**
+     * Write somehting to the log and print without a prefix.
+     * @param msg The line to write to the log.
+     * @return
+     */
     public boolean write (String msg) {
         try {
             System.out.println(msg);
@@ -52,6 +63,10 @@ public class Logging {
         return true;
     }
 
+    /**
+     * Write a new line to the log.
+     * @return Error check boolean
+     */
     public boolean writeNewLine () {
         try {
             printStream.print("\n");
@@ -62,11 +77,17 @@ public class Logging {
         return true;
     }
 
+    /**
+     * Log the start of the run and start timer.
+     */
     public void logStart() {
     	log("Starting now");
     	startTime = System.nanoTime();
     }
     
+    /**
+     * Log the end of the run, end the timer and calculate the time that was needed for the run.
+     */
     public void logEnd() {
     	log("Run finished");
     	endTime = System.nanoTime();
@@ -75,26 +96,46 @@ public class Logging {
     	log("Runtime was " + runTimeSecs);
     }
     
+    /**
+     * Log an obstacle detected.
+     */
     public void logObstacleDetected() {
     	log("Obstacle found, evading now");
     }
     
+    /**
+     * Log an obstacle successfully evaded.
+     */
     public void logObstacleSuccessfullyEvaded() {
     	log("Evaded successfully - returned to line");
     }
     
+    /**
+     * Log the robot adjusting it's position to continue following the line.
+     */
     public void logLineAdjust() {
     	log("Following line - adjusting");
     }
     
+    /**
+     * Log a left turn at a crossing.
+     */
     public void logLeftTurn() {
     	log("Turning left");
     }
     
+    /**
+     * Log a right turn at a crossing.
+     */
     public void logRightTurn() {
     	log("Turning right");
     }
     
+    /**
+     * Log a message including prefix.
+     * @param msg The String to log to the file.
+     * @return Error check boolean.
+     */
     public static boolean log (String msg) {
         try {
             String logStr = Header.generatePrefix() + " " + msg + "\n";
@@ -106,6 +147,9 @@ public class Logging {
         return true;
     }
     
+    /**
+     * Flush the stream and disconnect from the file.
+     */
     public void close () {
     	printStream.flush();
     	printStream.close();

@@ -5,6 +5,10 @@ import flodt.rcup.libs.SensorData;
 import flodt.rcup.libs.SensorPort;
 
 public class ReadSensorsUsonic {
+	/**
+	 * Read and print out ultrasonic sensor.
+	 * @param args
+	 */
 	public static void main (String[]args) {
 		System.out.println("Initializing...");
 		SensorData sensor = new SensorData(SensorPort.ONE, SensorPort.TWO, SensorPort.FOUR);

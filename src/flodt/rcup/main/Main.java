@@ -13,6 +13,10 @@ public class Main {
 	
 	public static Logging logger;
 	
+	/**
+	 * Line following program.
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		System.out.println("Initializing...");
 		logger = new Logging();

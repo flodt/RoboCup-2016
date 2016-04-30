@@ -21,6 +21,10 @@ public class Main_Schulfuehrung {
 	public static LargeMotor r;
 	public static SensorData sensor;
 	
+	/**
+	 * Stops when anything is in front of the ultrasonic sensor, good for showing the robot to visitors on an infinite loop.
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		System.out.println("Initializing...");
 		

@@ -4,9 +4,9 @@ import lejos.robotics.Color;
 
 public class LeJOSColors {
 	/**
-	 * Get the friendly name of the leJOS Color int.
-	 * @param color
-	 * @return
+	 * Get the friendly name of the leJOS Color ID.
+	 * @param color the lejos.robotics.Color id.
+	 * @return The color name as a String.
 	 */
 	public static String getFriendlyName(int color) {
 		switch (color) {
