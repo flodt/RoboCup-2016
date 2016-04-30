@@ -1,9 +1,15 @@
 package flodt.rcup.libs;
 import flodt.rcup.main.Main;
 
+/**
+ * Evade an object on the line.
+ * @author Flo
+ *
+ */
 public class Evade {
+	
 	/**
-	 * Evade an object on the line by calling the evadeObject() method.
+	 * Evade any object on the line. Dependant on the constant Arena.TURNING_DIRECTION.
 	 */
 	public static void evadeObject() {
 		if (Constants.Arena.TURNING_DIRECTION.equals(Constants.Arena.LEFT_DIRECTION)) {
@@ -16,7 +22,10 @@ public class Evade {
 		}
 	}
 	
-	public static void evadeObjectLeft() {
+	/**
+	 * Evade an object to the left.
+	 */
+	private static void evadeObjectLeft() {
 		//Zurück fahren
 		Main.l.resetTacho();
 		Main.r.resetTacho();
@@ -72,7 +81,10 @@ public class Evade {
 		return;
 	}
 	
-	public static void evadeObjectRight() {
+	/**
+	 * Evade an object to the right.
+	 */
+	private static void evadeObjectRight() {
 		//Zurück fahren
 		Main.l.resetTacho();
 		Main.r.resetTacho();
