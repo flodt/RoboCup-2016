@@ -94,8 +94,8 @@ public class Main {
 				} else {
 					System.out.println("< / " + sensor.brghtl() + " / " + sensor.brghtr());
 					logger.logLineAdjust();
-					l.bwd(Constants.Speeds.SLOW_TURN_SIDE);
-					r.fwd(Constants.Speeds.FAST_TURN_SIDE);
+					l.bwd(Constants.Speeds.MED);
+					r.fwd(Constants.Speeds.FAST);
 				}
 			}
 			
@@ -123,7 +123,7 @@ public class Main {
 					}
 				} else {
 					System.out.println("> / " + sensor.brghtl() + " / " + sensor.brghtr());					logger.logLineAdjust();
-					l.fwd(Constants.Speeds.FAST_TURN_SIDE);					r.bwd(Constants.Speeds.SLOW_TURN_SIDE);
+					l.fwd(Constants.Speeds.FAST);					r.bwd(Constants.Speeds.MED);
 					
 				}
 			}
