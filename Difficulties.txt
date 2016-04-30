@@ -1,0 +1,2 @@
+- Roboter biegt an Kreuzung ohne grünen Punkt ab
+- Roboter biegt bei grünem Punkt nach der Kreuzung auch ab

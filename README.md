@@ -22,3 +22,9 @@ Der Roboter gibt während der Läufe auf dem Display Infos zu seinem momentanen 
 
 #Regeln
 Die Regeln für die momentante Saison (Regeländerungen sind immer auch vor Ort möglich) finden sich immer auf der Website vom RoboCup.
+
+#Schwierigkeiten
+(vgl. Difficulties.txt)
+Problemstellen sind Kreuzungen -  der Roboter biegt an Kreuzungen ohne grünem Punkt trotzdem ab, oder er biegt ab, obwohl der grüne Punkt erst nach der Kreuzung steht.
+Auf der Rampe könnte er kippen/rutschen - beide dieser Probleme wurden gelöst.
+An den "Speed Bumps" verliert er auch öfters die Linie, auch das wurde allerdings größtenteils gelöst.
