@@ -20,6 +20,9 @@ Dies funktioniert, indem der Roboter, sobald er das Hindernis via Ultraschall er
 ##Logging
 Der Roboter gibt während der Läufe auf dem Display Infos zu seinem momentanen Status aus - in eine Log-Datei werden ebenfalls gröbere Informationen wie die Dateiversion, Variableneinstellungen, etc. geschrieben.
 
+#JavaDoc
+Das JavaDoc findet sich unter doc/.
+
 #Regeln
 Die Regeln für die momentante Saison (Regeländerungen sind immer auch vor Ort möglich) finden sich immer auf der Website vom RoboCup.
 
