@@ -142,13 +142,7 @@ public class Main {
 					b = 1;
 				}
 				
-				if (x-y < 0.04F) {
-					l.fwd(Constants.Speeds.MED);
-					r.fwd(Constants.Speeds.MED);
-					continue;
-				}
-				
-				if (x == 0 || y == 0) {
+				if (x-y < 0.04F || x == 0 || y == 0) {
 					l.fwd(Constants.Speeds.MED);
 					r.fwd(Constants.Speeds.MED);
 					continue;
