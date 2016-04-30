@@ -30,7 +30,7 @@ public class Main {
 		System.out.println("Sensors...");
 		sensor = new SensorData(SensorPort.ONE, SensorPort.TWO, SensorPort.FOUR);
 		
-		System.out.println("Ready!");
+		System.out.println("Ready");
 		
 		while (Button.ENTER.isUp()) {
 			System.out.print(".");
