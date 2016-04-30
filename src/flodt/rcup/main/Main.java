@@ -35,7 +35,7 @@ public class Main {
 		while (Button.ENTER.isUp()) {
 			System.out.print(".");
 			try {
-				Thread.sleep(750);
+				Thread.sleep(500);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
