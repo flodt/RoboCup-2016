@@ -80,8 +80,14 @@ public class Main {
 					System.out.println("<- / " + LeJOSColors.getFriendlyName((int) sensor.colorl()) + "/" + LeJOSColors.getFriendlyName((int) sensor.colorr()));
 					logger.logLeftTurn();
 					
-					l.deg(Constants.Speeds.SLOW, Constants.MotorValues.ADVANCE_DEGS, false);
-					r.deg(Constants.Speeds.SLOW, Constants.MotorValues.ADVANCE_DEGS, false);
+					l.brk();
+					r.brk();
+					
+					l.deg(Constants.Speeds.SLOWER, Constants.MotorValues.ADVANCE_DEGS, true);
+					r.deg(Constants.Speeds.SLOWER, Constants.MotorValues.ADVANCE_DEGS, false);
+					
+					l.brk();
+					r.brk();
 					
 					l.bwd(Constants.Speeds.GREEN_DOT_BWD);
 					r.fwd(Constants.Speeds.GREEN_DOT_FWD);
@@ -114,8 +120,14 @@ public class Main {
 					System.out.println("-> / " + LeJOSColors.getFriendlyName((int) sensor.colorl()) + "/" + LeJOSColors.getFriendlyName((int) sensor.colorr()));
 					logger.logRightTurn();
 					
-					l.deg(Constants.Speeds.SLOW, Constants.MotorValues.ADVANCE_DEGS, false);
-					r.deg(Constants.Speeds.SLOW, Constants.MotorValues.ADVANCE_DEGS, false);
+					l.brk();
+					r.brk();
+					
+					l.deg(Constants.Speeds.SLOWER, Constants.MotorValues.ADVANCE_DEGS, true);
+					r.deg(Constants.Speeds.SLOWER, Constants.MotorValues.ADVANCE_DEGS, false);
+					
+					l.brk();
+					r.brk();
 					
 					l.fwd(Constants.Speeds.GREEN_DOT_FWD);
 					r.bwd(Constants.Speeds.GREEN_DOT_BWD);
