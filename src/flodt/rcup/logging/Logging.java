@@ -39,6 +39,7 @@ public class Logging {
     	writeNewLine();
     	write("Location: " + Constants.General.LOC);
     	write("Speeds (FASTER,FAST,MED,SLOW,SLOWER): " + Constants.Speeds.FASTER + "," + Constants.Speeds.FAST + "," + Constants.Speeds.MED + "," + Constants.Speeds.SLOW + "," + Constants.Speeds.SLOWER);
+    	write("Speeds (GREEN_DOT_FWD,_BWD): " + Constants.Speeds.GREEN_DOT_FWD + "," + Constants.Speeds.GREEN_DOT_BWD);
     	write("Sensor Presets (Light thrshld, Dist thrshld): " + Constants.SensorValues.SCHWELLE + ", " + Constants.SensorValues.US_SCHWELLE);
     	write("Evade direction: " + Constants.Arena.TURNING_DIRECTION);
     	write("Values (turntime,back,turn1,fwd,turn2): " + Constants.MotorValues.TURNING_TIME + "," + Constants.MotorValues.EVADE_BACK + "," + Constants.MotorValues.EVADE_TURN_1 + "," + Constants.MotorValues.EVADE_FWD + "," + Constants.MotorValues.EVADE_TURN_2);

@@ -79,8 +79,8 @@ public class Main {
 				if (sensor.colorl() == Color.GREEN) {
 					System.out.println("<- / " + LeJOSColors.getFriendlyName((int) sensor.colorl()) + "/" + LeJOSColors.getFriendlyName((int) sensor.colorr()));
 					logger.logLeftTurn();
-					l.brk();
-					r.fwd(Constants.Speeds.MED);
+					l.bwd(Constants.Speeds.GREEN_DOT_BWD);
+					r.fwd(Constants.Speeds.GREEN_DOT_FWD);
 					
 					try {
 						Thread.sleep(Constants.MotorValues.TURNING_TIME);
@@ -109,8 +109,8 @@ public class Main {
 				if (sensor.colorr() == Color.GREEN) {
 					System.out.println("-> / " + LeJOSColors.getFriendlyName((int) sensor.colorl()) + "/" + LeJOSColors.getFriendlyName((int) sensor.colorr()));
 					logger.logRightTurn();
-					l.fwd(Constants.Speeds.MED);
-					r.brk();
+					l.fwd(Constants.Speeds.GREEN_DOT_FWD);
+					r.bwd(Constants.Speeds.GREEN_DOT_BWD);
 					
 					try {
 						Thread.sleep(Constants.MotorValues.TURNING_TIME);

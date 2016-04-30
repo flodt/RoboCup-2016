@@ -16,6 +16,8 @@ public class Constants {
 		public static final int MED = 300;
 		public static final int SLOW = 270;
 		public static final int SLOWER = 180;
+		public static final int GREEN_DOT_FWD = 300;
+		public static final int GREEN_DOT_BWD = 360;
 	}
 	
 	public class SensorValues {
