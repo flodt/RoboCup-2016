@@ -38,6 +38,7 @@ public class Main {
 				Thread.sleep(750);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
+				Sound.buzz();
 			}
 		}
 		
