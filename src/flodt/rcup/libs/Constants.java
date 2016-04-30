@@ -2,7 +2,7 @@ package flodt.rcup.libs;
 
 public class Constants {
 	public class General {
-		public static final int BUILD = 0;
+		public static final int BUILD = 254;
 		public static final String VOEH = "RCJ Qualifikation Vöhringen";
 		public static final String VOEH_SHORT = "Vhrg";
 		public static final String MGDB = "RCJ Finale Magdeburg";
