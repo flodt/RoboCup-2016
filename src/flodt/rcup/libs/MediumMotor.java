@@ -7,6 +7,10 @@ import lejos.robotics.RegulatedMotor;
 public class MediumMotor {
 	private RegulatedMotor m;
 	
+	/**
+	 * Control medium EV3 motors with this class.
+	 * @param mport MotorPort of the motor you want to access.
+	 */
 	public MediumMotor (Port mport) {
 		m = new EV3MediumRegulatedMotor(mport);
 	}

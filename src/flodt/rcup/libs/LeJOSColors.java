@@ -3,6 +3,11 @@ package flodt.rcup.libs;
 import lejos.robotics.Color;
 
 public class LeJOSColors {
+	/**
+	 * Get the friendly name of the leJOS Color int.
+	 * @param color
+	 * @return
+	 */
 	public static String getFriendlyName(int color) {
 		switch (color) {
 			case Color.GREEN:

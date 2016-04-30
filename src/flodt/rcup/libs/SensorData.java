@@ -27,7 +27,12 @@ public class SensorData {
 	private SampleProvider colorp;
 	private SampleProvider colorp2;
 	private SampleProvider usp;
-	
+	/**
+	 * Access sensor data through this class
+	 * @param colorl SensorPort of the left color sensor
+	 * @param colorr SensorPort of the right color sensor
+	 * @param us SensorPort of the ultrasonic sensor
+	 */
 	public SensorData (String colorl, String colorr, String us) {
 		Brick b = BrickFinder.getDefault();
 		

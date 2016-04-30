@@ -6,7 +6,10 @@ import lejos.robotics.RegulatedMotor;
 
 public class LargeMotor {
 	private RegulatedMotor m;
-	
+	/**
+	 * Control large EV3 motors with this class.
+	 * @param mport MotorPort of the motor you want to access.
+	 */
 	public LargeMotor (Port mport) {
 		m = new EV3LargeRegulatedMotor(mport);
 	}

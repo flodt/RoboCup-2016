@@ -2,6 +2,9 @@ package flodt.rcup.libs;
 import flodt.rcup.main.Main;
 
 public class Evade {
+	/**
+	 * Evade an object on the line by calling the evadeObject() method.
+	 */
 	public static void evadeObject() {
 		if (Constants.Arena.TURNING_DIRECTION.equals(Constants.Arena.LEFT_DIRECTION)) {
 			System.out.println("Preset is " + Constants.Arena.LEFT_DIRECTION);
