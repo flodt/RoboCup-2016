@@ -1,3 +1,5 @@
+Dies ist der alte Code von der Saison 2016 - der von 2017 befindet sich im Repository [RoboCup-2017](https://github.com/flodt/RoboCup-2017)
+
 RoboCup Junior Finale 2016
 ==========================
 Um den Rescue Line Secondary Parcour zu meistern, muss der Roboter einer Linie durch verschiedene Räume folgen, in denen sich verschiedene Problemstellen wie "Speed Bumps", Kreuzungen, Hindernisse oder Lücken in der Linie befinden. Am Ende des Parcours muss er im "Evacuation Room" die zufällig platzierten "Opfer" (Metallkugeln) in ein dafür vorgesehenes Fach an einer der vier Ecken des Raumes platzieren.
