@@ -100,7 +100,7 @@ public class Main {
 					}
 					
 					while (sensor.brghtl() > Constants.SensorValues.SCHWELLE) {
-						System.out.println("<- / " + LeJOSColors.getFriendlyName((int) sensor.colorl()) + "/" + LeJOSColors.getFriendlyName((int) sensor.colorr()));
+						System.out.println("< / Waiting for line...");
 					}
 				} else {
 					System.out.println("< / " + sensor.brghtl() + " / " + sensor.brghtr());
@@ -140,7 +140,7 @@ public class Main {
 					}
 					
 					while (sensor.brghtr() > Constants.SensorValues.SCHWELLE) {
-						System.out.println("-> / " + LeJOSColors.getFriendlyName((int) sensor.colorl()) + "/" + LeJOSColors.getFriendlyName((int) sensor.colorr()));
+						System.out.println("> / Waiting for line...");
 					}
 				} else {
 					System.out.println("> / " + sensor.brghtl() + " / " + sensor.brghtr());					logger.logLineAdjust();
