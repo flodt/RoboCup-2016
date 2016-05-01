@@ -21,7 +21,7 @@ Dies funktioniert, indem der Roboter, sobald er das Hindernis via Ultraschall er
 Der Roboter gibt während der Läufe auf dem Display Infos zu seinem momentanen Status aus - in eine Log-Datei werden ebenfalls gröbere Informationen wie die Dateiversion, Variableneinstellungen, etc. geschrieben.
 
 #JavaDoc
-Das JavaDoc findet sich unter doc/.
+Das JavaDoc findet sich im Verzeichnis doc/.
 
 #Regeln
 Die Regeln für die momentante Saison (Regeländerungen sind immer auch vor Ort möglich) finden sich [auf rcj2016.de.](https://rcj2016.de/sites/default/files/rescue_line_2015.pdf)
