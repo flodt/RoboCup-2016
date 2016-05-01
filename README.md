@@ -1,5 +1,5 @@
-#RoboCup Junior Finale 2016
-
+RoboCup Junior Finale 2016
+==========================
 Um den Rescue Line Secondary Parcour zu meistern, muss der Roboter einer Linie durch verschiedene Räume folgen, in denen sich verschiedene Problemstellen wie "Speed Bumps", Kreuzungen, Hindernisse oder Lücken in der Linie befinden. Am Ende des Parcours muss er im "Evacuation Room" die zufällig platzierten "Opfer" (Metallkugeln) in ein dafür vorgesehenes Fach an einer der vier Ecken des Raumes platzieren.
 
 #Programmlogik
@@ -24,7 +24,7 @@ Der Roboter gibt während der Läufe auf dem Display Infos zu seinem momentanen 
 Das JavaDoc findet sich unter doc/.
 
 #Regeln
-Die Regeln für die momentante Saison (Regeländerungen sind immer auch vor Ort möglich) finden sich immer auf der Website vom RoboCup.
+Die Regeln für die momentante Saison (Regeländerungen sind immer auch vor Ort möglich) finden sich [auf rcj2016.de.](https://rcj2016.de/sites/default/files/rescue_line_2015.pdf)
 
 #Schwierigkeiten
 (vgl. Difficulties.txt)
